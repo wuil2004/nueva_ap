@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficos del Notebook</title>
+</head>
+<body>
+    <h1>Gráficos de {{ notebook_name }}</h1>
+    {% for graph in graphs %}
+    <div>
+        <img src="data:image/png;base64,{{ graph }}" alt="Gráfico">
+    </div>
+    {% endfor %}
+    <a href="{{ url_for('index') }}">Volver a la lista de notebooks</a>
+</body>
+</html>
