@@ -12,7 +12,7 @@ NOTEBOOKS_DIR = "notebooks"
 STATIC_IMAGES_DIR = "static/images"
 
 # Lista de notebooks disponibles
-notebooks = ["Arboles.ipynb","Proyecto.ipynb"]
+notebooks = ["Arboles.ipynb","Proyec_regresion.ipynb"]
 
 def extract_graphs_and_accuracy_from_notebook(notebook_path):
     try:
